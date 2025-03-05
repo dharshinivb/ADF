@@ -8,6 +8,15 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage2_dataflow1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_dataflow_trial_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_dataflows_connectionString": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
@@ -15,6 +24,9 @@
 			"value": ""
 		},
 		"LS_ABLB__connectionString": {
+			"value": ""
+		},
+		"LS_ASQL__password": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
@@ -33,6 +45,15 @@
 			"value": "databasetest"
 		},
 		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "pooja"
+		},
+		"LS_ASQL__properties_typeProperties_server": {
+			"value": "poojaserverdb.database.windows.net"
+		},
+		"LS_ASQL__properties_typeProperties_database": {
+			"value": "databasetest"
+		},
+		"LS_ASQL__properties_typeProperties_userName": {
 			"value": "pooja"
 		}
 	}
