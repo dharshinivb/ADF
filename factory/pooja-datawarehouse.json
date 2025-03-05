@@ -1,0 +1,9 @@
+{
+	"name": "pooja-datawarehouse",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7b92def4-374a-4e59-bb68-21ebf135495d",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}
