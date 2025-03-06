@@ -1,8 +1,8 @@
 {
-	"name": "Metadata1",
+	"name": "Lookup1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_ABLB_INPUT",
+			"referenceName": "LS_ABLB_lookup",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -12,7 +12,7 @@
 				"type": "AzureBlobStorageLocation",
 				"container": "ablb-input"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": ";",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

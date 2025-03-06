@@ -133,7 +133,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"db_name": {
-											"value": "@activity('Get Metadata1').output.itemName",
+											"value": "@replace(item().name, '.csv', '')\r\n",
 											"type": "Expression"
 										}
 									}
