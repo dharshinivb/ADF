@@ -1,0 +1,24 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ASQL_1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"db_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "staging",
+			"table": {
+				"value": "@dataset().db_name",
+				"type": "Expression"
+			}
+		}
+	}
+}

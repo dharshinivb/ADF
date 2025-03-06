@@ -2,12 +2,13 @@
 	"name": "Excel1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_ABLB_INPUT",
+			"referenceName": "LS_ABLB_Excel",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
+			"sheetName": "Data",
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"container": "xlsv-format"
