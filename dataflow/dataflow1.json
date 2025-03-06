@@ -5,19 +5,11 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"dataset": {
-						"referenceName": "AzureSqlTable2",
-						"type": "DatasetReference"
-					},
 					"name": "source1"
 				}
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "DelimitedText5",
-						"type": "DatasetReference"
-					},
 					"name": "sink1"
 				}
 			],
@@ -48,23 +40,12 @@
 				"          ModifiedDate as timestamp",
 				"     ),",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> source1",
+				"     validateSchema: false) ~> source1",
 				"source1 filter(Title=='Mr.') ~> filter1",
 				"filter1 sort(asc(FirstName, true),",
 				"     caseInsensitive: true) ~> sort1",
 				"sort1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          OrderID as string,",
-				"          StoreID as string,",
-				"          ProductID as string,",
-				"          Quantity as string,",
-				"          PricePerUnit as string,",
-				"          OrderDate as string,",
-				"          Status as string",
-				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
