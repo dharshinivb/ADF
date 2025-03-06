@@ -187,14 +187,7 @@
 			{
 				"name": "Stored procedure1",
 				"type": "SqlServerStoredProcedure",
-				"dependsOn": [
-					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -204,11 +197,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[CopyUsersToPrep]",
-					"storedProcedureParameters": {
-						"value": "@activity('Copy data1').output",
-						"type": "Expression"
-					}
+					"storedProcedureName": "[dbo].[CopyUsersToPrep]"
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_ASQL_1",
