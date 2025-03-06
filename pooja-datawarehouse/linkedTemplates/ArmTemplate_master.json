@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"AzureBlobStorage2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
+		},
 		"AzureBlobStorage2_dataflow1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2_dataflow1'"
@@ -31,6 +35,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase2'"
 		},
+		"AzureSqlDatabase3_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
+		},
+		"LB__connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LB_'"
+		},
 		"LS_ABLB__connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_ABLB_'"
@@ -38,14 +50,6 @@
 		"LS_ASQL__password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_ASQL_'"
-		},
-		"AzureSqlDatabase3_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
-		},
-		"AzureBlobStorage2_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
@@ -71,18 +75,6 @@
 			"type": "string",
 			"defaultValue": "pooja"
 		},
-		"LS_ASQL__properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "poojaserverdb.database.windows.net"
-		},
-		"LS_ASQL__properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "databasetest"
-		},
-		"LS_ASQL__properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "pooja"
-		},
 		"AzureSqlDatabase3_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "poojaserverdb.database.windows.net"
@@ -92,6 +84,42 @@
 			"defaultValue": "databasetest"
 		},
 		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "pooja"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "poojaserverdb.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "@{linkedService().db_name}"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "pooja"
+		},
+		"AzureSqlDatabase_parameter_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "poojaserverdb.database.windows.net"
+		},
+		"AzureSqlDatabase_parameter_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "@{linkedService().db_name}"
+		},
+		"AzureSqlDatabase_parameter_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "pooja"
+		},
+		"LS_ASQL__properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "poojaserverdb.database.windows.net"
+		},
+		"LS_ASQL__properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "databasetest"
+		},
+		"LS_ASQL__properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "pooja"
 		},
@@ -125,6 +153,9 @@
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
+					"AzureBlobStorage2_connectionString": {
+						"value": "[parameters('AzureBlobStorage2_connectionString')]"
+					},
 					"AzureBlobStorage2_dataflow1_connectionString": {
 						"value": "[parameters('AzureBlobStorage2_dataflow1_connectionString')]"
 					},
@@ -140,17 +171,17 @@
 					"AzureSqlDatabase2_password": {
 						"value": "[parameters('AzureSqlDatabase2_password')]"
 					},
+					"AzureSqlDatabase3_password": {
+						"value": "[parameters('AzureSqlDatabase3_password')]"
+					},
+					"LB__connectionString": {
+						"value": "[parameters('LB__connectionString')]"
+					},
 					"LS_ABLB__connectionString": {
 						"value": "[parameters('LS_ABLB__connectionString')]"
 					},
 					"LS_ASQL__password": {
 						"value": "[parameters('LS_ASQL__password')]"
-					},
-					"AzureSqlDatabase3_password": {
-						"value": "[parameters('AzureSqlDatabase3_password')]"
-					},
-					"AzureBlobStorage2_connectionString": {
-						"value": "[parameters('AzureBlobStorage2_connectionString')]"
 					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
@@ -170,15 +201,6 @@
 					"AzureSqlDatabase2_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase2_properties_typeProperties_userName')]"
 					},
-					"LS_ASQL__properties_typeProperties_server": {
-						"value": "[parameters('LS_ASQL__properties_typeProperties_server')]"
-					},
-					"LS_ASQL__properties_typeProperties_database": {
-						"value": "[parameters('LS_ASQL__properties_typeProperties_database')]"
-					},
-					"LS_ASQL__properties_typeProperties_userName": {
-						"value": "[parameters('LS_ASQL__properties_typeProperties_userName')]"
-					},
 					"AzureSqlDatabase3_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_server')]"
 					},
@@ -187,30 +209,37 @@
 					},
 					"AzureSqlDatabase3_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase4_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase4_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase_parameter_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase_parameter_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase_parameter_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase_parameter_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase_parameter_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase_parameter_properties_typeProperties_userName')]"
+					},
+					"LS_ASQL__properties_typeProperties_server": {
+						"value": "[parameters('LS_ASQL__properties_typeProperties_server')]"
+					},
+					"LS_ASQL__properties_typeProperties_database": {
+						"value": "[parameters('LS_ASQL__properties_typeProperties_database')]"
+					},
+					"LS_ASQL__properties_typeProperties_userName": {
+						"value": "[parameters('LS_ASQL__properties_typeProperties_userName')]"
 					}
 				}
 			},
 			"dependsOn": []
-		},
-		{
-			"name": "pooja-datawarehouse_ArmTemplate_1",
-			"type": "Microsoft.Resources/deployments",
-			"apiVersion": "2024-03-01",
-			"properties": {
-				"mode": "incremental",
-				"templateLink": {
-					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
-					"contentVersion": "1.0.0.0"
-				},
-				"parameters": {
-					"factoryName": {
-						"value": "[parameters('factoryName')]"
-					}
-				}
-			},
-			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'pooja-datawarehouse_ArmTemplate_0')]"
-			]
 		}
 	]
 }
