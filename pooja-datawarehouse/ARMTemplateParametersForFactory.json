@@ -8,80 +8,23 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
-		"AzureBlobStorage2_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage2_dataflow1_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage2_dataflow_trial_connectionString": {
-			"value": ""
-		},
-		"AzureBlobStorage2_dataflows_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase1_password": {
-			"value": ""
-		},
-		"AzureSqlDatabase2_password": {
-			"value": ""
-		},
-		"AzureSqlDatabase3_password": {
-			"value": ""
-		},
 		"LB__connectionString": {
 			"value": ""
 		},
-		"LS_ABLB__connectionString": {
+		"LS_ABLB_Excel_connectionString": {
+			"value": ""
+		},
+		"LS_ABLB_INPUT_connectionString": {
+			"value": ""
+		},
+		"LS_ABLB_lookup_connectionString": {
 			"value": ""
 		},
 		"LS_ASQL__password": {
 			"value": ""
 		},
-		"AzureSqlDatabase1_properties_typeProperties_server": {
-			"value": "sqldbname.database.windows.net"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_database": {
-			"value": "dbsql"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_userName": {
-			"value": "Sqldatabase"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_server": {
-			"value": "poojaserverdb.database.windows.net"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_database": {
-			"value": "databasetest"
-		},
-		"AzureSqlDatabase2_properties_typeProperties_userName": {
-			"value": "pooja"
-		},
-		"AzureSqlDatabase3_properties_typeProperties_server": {
-			"value": "poojaserverdb.database.windows.net"
-		},
-		"AzureSqlDatabase3_properties_typeProperties_database": {
-			"value": "databasetest"
-		},
-		"AzureSqlDatabase3_properties_typeProperties_userName": {
-			"value": "pooja"
-		},
-		"AzureSqlDatabase4_properties_typeProperties_server": {
-			"value": "poojaserverdb.database.windows.net"
-		},
-		"AzureSqlDatabase4_properties_typeProperties_database": {
-			"value": "@{linkedService().db_name}"
-		},
-		"AzureSqlDatabase4_properties_typeProperties_userName": {
-			"value": "pooja"
-		},
-		"AzureSqlDatabase_parameter_properties_typeProperties_server": {
-			"value": "poojaserverdb.database.windows.net"
-		},
-		"AzureSqlDatabase_parameter_properties_typeProperties_database": {
-			"value": "@{linkedService().db_name}"
-		},
-		"AzureSqlDatabase_parameter_properties_typeProperties_userName": {
-			"value": "pooja"
+		"LS_ASQL_1_password": {
+			"value": ""
 		},
 		"LS_ASQL__properties_typeProperties_server": {
 			"value": "poojaserverdb.database.windows.net"
@@ -91,6 +34,18 @@
 		},
 		"LS_ASQL__properties_typeProperties_userName": {
 			"value": "pooja"
+		},
+		"LS_ASQL_1_properties_typeProperties_server": {
+			"value": "poojaserverdb.database.windows.net"
+		},
+		"LS_ASQL_1_properties_typeProperties_database": {
+			"value": "databasetest"
+		},
+		"LS_ASQL_1_properties_typeProperties_userName": {
+			"value": "pooja"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": " https://jsonplaceholder.typicode.com"
 		}
 	}
 }
